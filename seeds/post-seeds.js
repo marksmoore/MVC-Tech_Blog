@@ -1,6 +1,6 @@
 const { Post } = require('../models');
 
-const postdata = [
+const postData = [
   {
     title: 'Donec posuere metus vitae ipsum.',
     post_content: 'Fugiat ea sunt enim ut dolor. Tempor ex eu cupidatat sint. Aliquip ex velit do duis voluptate fugiat anim ipsum exercitation consectetur labore aliquip qui quis.',
