@@ -28,7 +28,7 @@ const postdata = [
   },
   {
     title: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit.',
-    post_content: 'Minim fugiat do deserunt cupidatat commodo dolor irure aliquip sint id reprehenderit adipisicing. Nulla non ullamco amet enim adipisicing quis adipisicing irure ad culpa duis. Veniam qui eiusmod ea aliqua voluptate eu elit anim aliqua exercitation pariatur aliqua. Ad esse culpa ut irure consequat enim cillum veniam consectetur nostrud officia enim. Commodo ea aute ex proident do elit voluptate deserunt esse voluptate. Id et culpa sint reprehenderit aliqua cupidatat ex dolore enim aute esse adipisicing tempor in. Dolor anim aute non laboris nulla pariatur ipsum et do cupidatat enim voluptate.',
+    post_content: 'Minim fugiat do deserunt cupidatat commodo dolor irure aliquip sint id reprehenderit adipisicing. Nulla non ullamco amet enim.',
     user_id: 4
   },
   {
@@ -56,52 +56,6 @@ const postdata = [
     post_content: 'Dolor nisi culpa adipisicing aliqua. Ut proident cillum exercitation magna reprehenderit excepteur sit. Sint magna aliqua sit nisi aute nisi reprehenderit sint tempor laboris fugiat. Laborum consequat commodo laborum tempor dolor excepteur mollit cillum dolore voluptate excepteur fugiat eu.',
     user_id: 3
   },
-  {
-    title: 'Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.',
-    post_content: 'Nulla quis ipsum amet dolor do est consequat id amet excepteur esse enim eu. In fugiat anim exercitation magna Lorem cillum. Laboris quis cupidatat ullamco officia consectetur esse reprehenderit ea. Dolor magna est nisi consectetur deserunt velit ipsum veniam voluptate in eu non elit veniam.',
-    user_id: 10
-  },
-  {
-    title: 'Donec dapibus.',
-    post_content: 'Proident amet officia cupidatat excepteur Lorem ut. Lorem pariatur dolore id incididunt sit ullamco eiusmod deserunt aliquip magna est officia id reprehenderit. Ut deserunt eu ex anim non aliquip amet eiusmod dolor. Aliquip consectetur tempor sunt quis anim sit amet dolore aute nulla elit fugiat excepteur excepteur. Labore ullamco ea laborum sint mollit. Ad velit officia sit duis fugiat commodo aute eu cupidatat proident. Id officia dolore magna anim dolore irure eu amet mollit anim id.',
-    user_id: 8
-  },
-  {
-    title: 'Nulla tellus.',
-    post_content: 'Quis qui magna ea ex eu enim. Ad sit veniam labore minim. Cupidatat aliquip enim tempor nulla occaecat eu ex. Fugiat proident Lorem pariatur eiusmod reprehenderit anim laboris minim do incididunt est in proident dolor. Cillum occaecat ex nostrud id. Commodo nostrud dolor nulla aute ad reprehenderit commodo ad. Laboris non aliqua ut do cillum exercitation pariatur sint.',
-    user_id: 3
-  },
-  {
-    title: 'Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo.',
-    post_content: 'Ullamco duis occaecat enim minim nisi esse dolor anim cupidatat in. Dolore cillum consequat eu sint officia commodo do culpa in ipsum pariatur. Est voluptate consectetur laboris sunt occaecat consequat. Proident do fugiat irure pariatur eu aute amet. Id eiusmod mollit pariatur anim voluptate cupidatat nulla aliquip in. Commodo sint quis est culpa consectetur ipsum aute cillum enim veniam sint reprehenderit nisi. Tempor mollit sunt enim enim ex in excepteur ullamco dolor amet.',
-    user_id: 3
-  },
-  {
-    title:
-      'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam.',
-    post_content: 'Ipsum officia nostrud laborum proident aute velit. Ipsum esse duis laborum consequat aliquip velit consectetur et. Cupidatat ad veniam sit sunt exercitation sunt Lorem cupidatat laboris duis eiusmod.',
-    user_id: 7
-  },
-  {
-    title: 'In hac habitasse platea dictumst.',
-    post_content: 'Fugiat voluptate excepteur proident laboris incididunt sunt velit labore qui reprehenderit laboris excepteur nostrud culpa. Commodo id ex minim qui enim incididunt ex laboris aute duis officia occaecat. Enim nostrud reprehenderit ut enim proident adipisicing sit aliqua mollit amet cupidatat voluptate sit. Mollit fugiat laboris esse aliquip commodo consequat reprehenderit cupidatat Lorem commodo nulla exercitation consequat ex. Labore dolor cupidatat Lorem aliqua aute quis voluptate sint. Esse id nisi veniam aliquip ad.',
-    user_id: 6
-  },
-  {
-    title: 'Etiam justo.',
-    post_content: 'Dolor irure irure eiusmod sunt aliquip nostrud nulla adipisicing elit. Sit dolor proident irure incididunt pariatur ea aliqua sint consectetur. Ullamco excepteur ad sit sint nostrud nulla ullamco cillum nulla consectetur. Incididunt aliquip in pariatur elit sint ipsum culpa ullamco consectetur sunt culpa magna aliqua labore. Deserunt ullamco occaecat fugiat ea dolor velit commodo culpa veniam magna quis id in eiusmod. Laborum ex enim aute dolor do nulla Lorem.',
-    user_id: 4
-  },
-  {
-    title: 'Nulla ut erat id mauris vulputate elementum.',
-    post_content: 'Incididunt ipsum veniam et dolore in. Mollit adipisicing sunt ullamco Lorem sunt nulla mollit aliqua excepteur consectetur proident do ut. Velit proident excepteur occaecat est Lorem cupidatat deserunt aliquip adipisicing reprehenderit cillum esse. Cupidatat ut dolore occaecat magna incididunt esse cillum ipsum reprehenderit commodo et aute.',
-    user_id: 6
-  },
-  {
-    title: 'Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.',
-    post_content: 'Sint voluptate voluptate cupidatat voluptate proident cillum nisi do eu sit nostrud consectetur. Quis irure aliquip fugiat quis. Esse sit reprehenderit aute nisi elit pariatur id aute proident commodo velit est ea cupidatat. Consequat do quis id nostrud proident velit id nulla fugiat et eu fugiat sunt velit. Quis cupidatat commodo exercitation voluptate nulla proident.',
-    user_id: 7
-  }
 ];
 
 const seedPosts = () => Post.bulkCreate(postdata);
