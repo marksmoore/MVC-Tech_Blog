@@ -3,27 +3,27 @@ const { Post } = require('../models');
 const postdata = [
   {
     title: 'Donec posuere metus vitae ipsum.',
-    post_content: 'Fugiat ea sunt enim ut dolor. Tempor ex eu cupidatat sint. Aliquip ex velit do duis voluptate fugiat anim ipsum exercitation consectetur labore aliquip qui quis. Aute qui ipsum pariatur magna. Cupidatat adipisicing voluptate culpa culpa et ullamco ipsum adipisicing amet reprehenderit amet dolore proident.',
+    post_content: 'Fugiat ea sunt enim ut dolor. Tempor ex eu cupidatat sint. Aliquip ex velit do duis voluptate fugiat anim ipsum exercitation consectetur labore aliquip qui quis.',
     user_id: 10
   },
   {
     title: 'Morbi non quam nec dui luctus rutrum.',
-    post_content: 'Velit excepteur proident consequat ea commodo duis. Do laborum minim mollit consectetur excepteur cupidatat ullamco anim laborum in. Tempor reprehenderit enim elit labore in ullamco proident elit. Ad dolore ipsum est voluptate minim eu pariatur. Nisi laboris labore voluptate irure laborum. Occaecat ipsum quis dolore ullamco dolore laboris. Tempor adipisicing enim aliqua anim proident.',
+    post_content: 'Velit excepteur proident consequat ea commodo duis. Do laborum minim mollit consectetur excepteur cupidatat ullamco anim laborum in. Tempor reprehenderit enim elit labore in ullamco proident elit.',
     user_id: 8
   },
   {
     title: 'Donec diam neque, vestibulum eget, vulputate ut, ultrices vel, augue.',
-    post_content: 'Do tempor est dolore labore ex nisi enim velit laboris amet aliquip nisi ea do. Laboris non pariatur laboris velit fugiat qui veniam in ea do in nulla commodo. Laboris magna consectetur aliquip magna minim amet excepteur velit sunt nulla voluptate deserunt. Est culpa ut tempor officia elit Lorem. Nulla ut in irure non esse quis cillum ad occaecat sit eiusmod ad laboris culpa.',
+    post_content: 'Do tempor est dolore labore ex nisi enim velit laboris amet aliquip nisi ea do. Laboris non pariatur laboris velit fugiat qui veniam in ea do in nulla commodo. Laboris magna consectetur aliquip magna.',
     user_id: 1
   },
   {
     title: 'Nunc purus.',
-    post_content: 'Culpa amet enim mollit est fugiat minim Lorem sit veniam ad ex dolore. Exercitation ea commodo esse fugiat exercitation nisi esse nisi tempor commodo est minim. Aliquip nisi est irure eiusmod cupidatat magna consequat eu veniam do. Officia non sint duis voluptate do.',
+    post_content: 'Culpa amet enim mollit est fugiat minim Lorem sit veniam ad ex dolore. Exercitation ea commodo esse fugiat exercitation nisi esse nisi tempor commodo est minim. Aliquip nisi est irure eiusmod.',
     user_id: 4
   },
   {
     title: 'Pellentesque eget nunc.',
-    post_content: 'Voluptate sit reprehenderit magna aliquip. Anim nisi veniam eu fugiat. Sit et non ad ea consectetur laborum dolor exercitation dolore nostrud deserunt sint. Lorem dolore qui ut id ex ad. Aliquip id eu esse do do Lorem voluptate id ad. Cupidatat amet elit nostrud nisi exercitation voluptate consectetur nisi dolor. Excepteur consequat eu elit excepteur cupidatat commodo culpa aliqua amet laborum Lorem irure.',
+    post_content: 'Voluptate sit reprehenderit magna aliquip. Anim nisi veniam eu fugiat. Sit et non ad ea consectetur laborum dolor exercitation dolore nostrud deserunt sint. Lorem dolore qui ut id ex ad.',
     user_id: 7
   },
   {
@@ -33,7 +33,7 @@ const postdata = [
   },
   {
     title: 'In hac habitasse platea dictumst.',
-    post_content: 'Esse qui incididunt dolor consequat. Commodo dolore anim duis laboris duis et. Excepteur culpa consequat laborum dolor. Anim et commodo officia cillum id elit exercitation voluptate ex incididunt id minim. Non cillum cupidatat id sunt enim eiusmod cupidatat cillum veniam ut. Elit tempor sit et mollit amet sit aute amet consectetur ad quis est.',
+    post_content: 'Esse qui incididunt dolor consequat. Commodo dolore anim duis laboris duis et. Excepteur culpa consequat laborum dolor. Anim et commodo officia cillum id elit exercitation voluptate ex incididunt id minim.',
     user_id: 1
   },
   {
@@ -53,9 +53,9 @@ const postdata = [
   },
   {
     title: 'In hac habitasse platea dictumst.',
-    post_content: 'Dolor nisi culpa adipisicing aliqua. Ut proident cillum exercitation magna reprehenderit excepteur sit. Sint magna aliqua sit nisi aute nisi reprehenderit sint tempor laboris fugiat. Laborum consequat commodo laborum tempor dolor excepteur mollit cillum dolore voluptate excepteur fugiat eu.',
+    post_content: 'Dolor nisi culpa adipisicing aliqua. Ut proident cillum exercitation magna reprehenderit excepteur sit. Sint magna aliqua sit nisi aute nisi reprehenderit sint tempor laboris fugiat. Laborum consequat commodo.',
     user_id: 3
-  },
+  }
 ];
 
 const seedPosts = () => Post.bulkCreate(postdata);
