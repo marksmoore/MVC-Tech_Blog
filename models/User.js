@@ -26,13 +26,14 @@ User.init(
           allowNull: false
         },
         twitter: {
-          type: DataTypes.STRING,
-          allowNull: true
+            type: DataTypes.STRING,
+            allowNull: true
         },
         github: {
-          type: DataTypes.STRING,
-          allowNull: true
-      },
+            type: DataTypes.STRING,
+            allowNull: true
+        },
+        // define an email column
         email: {
           type: DataTypes.STRING,
           allowNull: false,
