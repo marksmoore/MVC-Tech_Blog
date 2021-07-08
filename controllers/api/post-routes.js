@@ -8,17 +8,16 @@ router.get('/', (req, res) => {
   console.log('======================');
   Post.findAll({
     attributes: [
-      'id',
-      'title',
-      'content',
-      'created_at',
-      'updated_at',
-      [sequelize.literal('(SELECT COUNT(*) FROM comment WHERE post.id = comment.post_id)'), 'comment_count']
+            'id',
+            'title',
+            'created_at',
+            'post_content'
     ],
+    order: [['created_at', 'DESC']],
     include: [
       {
         model: Comment,
-        attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at', 'updated_at'],
+        attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
         include: {
           model: User,
           attributes: ['id', 'username']
@@ -45,15 +44,13 @@ router.get('/:id', (req, res) => {
     attributes: [
       'id',
       'title',
-      'content',
       'created_at',
-      'updated_at',
-      [sequelize.literal('(SELECT COUNT(*) FROM comment WHERE post.id = comment.post_id)'), 'comment_count']
+      'post_content'
     ],
     include: [
       {
         model: Comment,
-        attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at', 'updated_at'],
+        attributes: ['id', 'comment_text', 'post_id', 'user_id', 'created_at'],
         include: {
           model: User,
           attributes: ['id', 'username']
@@ -82,10 +79,10 @@ router.post("/", withAuth, (req, res) => {
   // expects {title: 'new post!', content: 'this is new content', user_id: 1}
   Post.create({
     title: req.body.title,
-    content: req.body.content,
+    post_content: req.body.post_content,
     user_id: req.session.user_id,
   })
-    .then((dbData) => res.json(dbData))
+    .then((dbPostData) => res.json(dbPostData))
     .catch((err) => {
       console.log(err);
       res.status(500).json(err);
@@ -96,7 +93,7 @@ router.put('/:id', withAuth, (req, res) => {
   Post.update(
     {
       title: req.body.title,
-      content: req.body.content
+      post_content: req.body.post_content
     },
     {
       where: {
@@ -139,52 +136,6 @@ router.delete('/:id', withAuth, (req, res) => {
     });
 });
 
-router.get('/users/:user_id', (req, res) => {
-    console.log('======================');
-    Post.findAll({
-      where: {
-        user_id: req.params.user_id,
-      },
-      attributes: [
-        'id',
-        'title',
-        'content',
-        'created_at',
-        'updated_at',
-        [
-          sequelize.literal(
-            '(SELECT COUNT(*) FROM comment WHERE post.id = comment.post_id)'
-          ),
-          'comment_count',
-        ],
-      ],
-      include: [
-        {
-          model: Comment,
-          attributes: [
-            'id',
-            'comment_text',
-            'post_id',
-            'user_id',
-            'created_at',
-            'updated_at',
-          ],
-          include: {
-            model: User,
-            attributes: ['id', 'username'],
-          },
-        },
-        {
-          model: User,
-          attributes: ['id', 'username'],
-        },
-      ],
-    })
-      .then((dbData) => res.json(dbData))
-      .catch((err) => {
-        console.log(err);
-        res.status(500).json(err);
-      });
-  });
+
   
 module.exports = router;

@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { User, Post, Comment, Vote } = require('../../models');
+const { User, Post, Comment } = require('../../models');
 
 // get all users
 router.get('/', (req, res) => {
@@ -22,11 +22,11 @@ router.get('/:id', (req, res) => {
     include: [
       {
         model: Post,
-        attributes: ['id', 'title', 'content', 'created_at', 'updated_at']
+        attributes: ['id', 'title', 'post_content', 'created_at']
       },
       {
         model: Comment,
-        attributes: ['id', 'comment_text', 'created_at', 'updated_at'],
+        attributes: ['id', 'comment_text', 'created_at'],
         include: {
           model: Post,
           attributes: ['id', 'title']
@@ -51,7 +51,8 @@ router.post('/', (req, res) => {
   // expects {username: 'Lernantino', email: 'lernantino@gmail.com', password: 'password1234'}
   User.create({
     username: req.body.username,
-    password: req.body.password,
+    email: req.body.password,
+    password: req.body.password
   })
     .then(dbUserData => {
       req.session.save(() => {
@@ -72,6 +73,7 @@ router.post('/login', (req, res) => {
   // expects {username: 'lernantino', password: 'password1234'}
   User.findOne({
     where: {
+      email: req.body.email,
       username: req.body.username
     }
   }).then(dbUserData => {
