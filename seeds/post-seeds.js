@@ -4,7 +4,7 @@ const postData = [
   {
     title: "Donec posuere metus vitae ipsum.",
     post_content: "Fugiat ea sunt enim ut dolor. Tempor ex eu cupidatat sint. Aliquip ex velit do duis voluptate fugiat anim ipsum exercitation consectetur labore aliquip qui quis.",
-    user_id: 10
+    user_id: 2
   },
   {
     title: "Morbi non quam nec dui luctus rutrum.",
@@ -44,7 +44,7 @@ const postData = [
   {
     title: "Duis ac nibh.",
     post_content: "Ullamco sint eiusmod irure pariatur laborum et minim nisi occaecat amet. Aute est Lorem excepteur sunt in anim sit amet ea fugiat aliqua eiusmod nulla. Ullamco dolore ipsum eiusmod velit qui nostrud non exercitation magna.",
-    user_id: 9
+    user_id: 8
   },
   {
     title: "Curabitur at ipsum ac tellus semper interdum.",
